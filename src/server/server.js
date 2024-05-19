@@ -9,7 +9,7 @@ const InputError = require("../exceptions/InputError");
 (async () => {
   const server = Hapi.server({
     port: 3000,
-    host: "localhost", //nanti ganti jadi 0.0.0.0 kalau mau ke production
+    host: "0.0.0.0", //nanti ganti jadi 0.0.0.0 kalau mau ke production
     routes: {
       cors: {
         origin: ["*"],
